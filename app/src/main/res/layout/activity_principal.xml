@@ -8,11 +8,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ittepic.prestapp.Principal"
-    style="@style/Base.Theme.AppCompat">
+    style="@style/AppTheme.NoActionBar">
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -20,16 +20,16 @@
         android:weightSum="1"
         android:id="@+id/linearLayout">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:text="nuevo prestamo"
-            android:id="@+id/button" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NuevoPres"
+            android:src="@drawable/nuevo" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentLeft="true"
@@ -37,26 +37,26 @@
         android:weightSum="1"
         android:id="@+id/linearLayout2">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:text="ver prestamos"
-            android:id="@+id/ver" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Verpresta"
+            android:src="@drawable/ver" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:weightSum="1">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:text="configuracion"
-            android:id="@+id/config" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Config"
+            android:src="@drawable/conf" />
     </LinearLayout>
 </RelativeLayout>
