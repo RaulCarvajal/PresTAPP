@@ -8,20 +8,20 @@ import android.widget.ImageButton;
 
 public class Principal extends AppCompatActivity {
 
-    ImageButton nuevo;
+    ImageButton NuevoPres;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        nuevo=(ImageButton)findViewById(R.id.NuevoPres);
+        NuevoPres=(ImageButton)findViewById(R.id.NuevoPres);
 
-        nuevo.setOnClickListener(new View.OnClickListener() {
+        NuevoPres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent NP = new Intent(Principal.this, Nuevo.class);
                 startActivity(NP);
             }
         });
-
+    }
 }
