@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PresTAPP</string>
+    <string name="title_activity_nuevo_pres">Nuevo préstamo</string>
+    <string name="title_activity_nuevo">Nuevo</string>
 </resources>
