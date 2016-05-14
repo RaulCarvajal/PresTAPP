@@ -19,7 +19,7 @@ public class Principal extends AppCompatActivity {
         NuevoPres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent NP = new Intent(Principal.this, Nuevo.class);
+                Intent NP = new Intent(Principal.this, NuevoPrestamo.class);
                 startActivity(NP);
             }
         });
