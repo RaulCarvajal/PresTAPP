@@ -8,20 +8,30 @@ import android.widget.ImageButton;
 
 public class Principal extends AppCompatActivity {
 
-    ImageButton NuevoPres;
+    ImageButton NuevoPres,VerRegis,Confi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
         NuevoPres=(ImageButton)findViewById(R.id.NuevoPres);
+        VerRegis=(ImageButton)findViewById(R.id.Verpresta);
+        Confi=(ImageButton)findViewById(R.id.Config);
 
-        NuevoPres.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent NP = new Intent(Principal.this, NuevoPrestamo.class);
-                startActivity(NP);
-            }
-        });
+    }
+
+    public void AbrirNuevo(View v) {
+        Intent next = new Intent(this, NuevoPrestamo.class);
+        this.startActivity(next);
+    }
+
+    public void AbrirReg(View v){
+        Intent next = new Intent(this, VerReg.class);
+        this.startActivity(next);
+    }
+
+    public void AbrirConf(View v){
+        Intent next = new Intent(this, Conf.class);
+        this.startActivity(next);
     }
 }

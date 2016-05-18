@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
     tools:context="ittepic.prestapp.NuevoPrestamo"
-    android:background="#333333">
+    android:background="#424242">
 
     <LinearLayout
         android:orientation="vertical"
@@ -35,8 +35,8 @@
             android:id="@+id/editText"
             android:textColor="#C4C4C4"
             android:theme="@style/AppTheme.AppBarOverlay"
-            android:textSize="13dp"
-            android:text="Q U E   V A S   A   P R E S T A R Á S" />
+            android:textSize="14dp"
+            android:hint="Q U E   V A S   A   P R E S T A R" />
     </LinearLayout>
 
     <LinearLayout
@@ -62,8 +62,8 @@
             android:id="@+id/editText2"
             android:textColor="#c4c4c4"
             android:theme="@style/AppTheme.AppBarOverlay"
-            android:textSize="13dp"
-            android:text="A  Q U I E N   L E   P R E S T A R Á S"
+            android:textSize="14dp"
+            android:hint="A  Q U I E N   L E   P R E S T A R Á S"
             android:allowUndo="true" />
     </LinearLayout>
 
@@ -113,7 +113,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="170dp"
         android:layout_below="@+id/linearLayout7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -130,42 +130,63 @@
             android:textColor="#ffffff" />
 
         <DatePicker
-            android:layout_width="wrap_content"
-            android:layout_height="130dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:id="@+id/datePicker"
-            android:layout_gravity="right" />
+            android:layout_gravity="center" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/linearLayout9">
 
         <ImageButton
-            android:layout_width="106dp"
-            android:layout_height="95dp"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
             android:id="@+id/imageButton"
-            android:src="@drawable/abc_ic_clear_mtrl_alpha" />
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="#212121" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_alignTop="@+id/linearLayout9"
         android:layout_toRightOf="@+id/linearLayout9"
-        android:layout_toEndOf="@+id/linearLayout9">
+        android:layout_toEndOf="@+id/linearLayout9"
+        android:gravity="right">
 
         <ImageButton
-            android:layout_width="110dp"
-            android:layout_height="98dp"
+            android:layout_width="185dp"
+            android:layout_height="50dp"
             android:id="@+id/imageButton2"
-            android:src="@android:drawable/ic_menu_send"
-            android:layout_gravity="right" />
+            android:src="@android:drawable/ic_menu_save"
+            android:layout_gravity="right"
+            android:background="#212121" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoy estamos a:"
+            android:id="@+id/fec"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
     </LinearLayout>
 
 </RelativeLayout>

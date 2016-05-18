@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ittepic.prestapp.Principal"
     style="@style/Base.V11.Theme.AppCompat.Light.Dialog"
@@ -24,11 +24,12 @@
         android:layout_marginTop="31dp">
 
         <ImageButton
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/NuevoPres"
             android:src="@drawable/nuevo"
-            android:layout_gravity="left|center" />
+            android:background="#929497"
+            android:onClick="AbrirNuevo" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,10 +43,12 @@
         android:layout_alignParentEnd="true">
 
         <ImageButton
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Verpresta"
-            android:src="@drawable/ver" />
+            android:src="@drawable/ver"
+            android:background="#929497"
+            android:onClick="AbrirReg" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,12 +63,12 @@
         android:layout_marginBottom="40dp">
 
         <ImageButton
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Config"
             android:src="@drawable/conf"
-            android:layout_below="@+id/linearLayout3"
-            android:layout_centerHorizontal="true" />
+            android:background="#929497"
+            android:onClick="AbrirConf" />
     </LinearLayout>
 
 </RelativeLayout>
