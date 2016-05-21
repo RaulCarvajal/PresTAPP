@@ -10,4 +10,71 @@
     tools:context="ittepic.prestapp.Conf"
     android:background="#424242">
 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout10">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver devoluciones"
+            android:id="@+id/button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="agregar categoria"
+            android:id="@+id/button2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="acerca de"
+            android:id="@+id/button3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout10"
+        android:layout_alignParentLeft="true"
+        android:background="#8a8a8a"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="P R E C A U C I O N"
+            android:id="@+id/textView5"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar esta zona"
+            android:id="@+id/checkBox" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR REGISTROS"
+            android:id="@+id/button4"
+            android:focusable="false"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR CATEGORIAS"
+            android:id="@+id/button5"
+            android:focusable="false"/>
+
+    </LinearLayout>
 </RelativeLayout>

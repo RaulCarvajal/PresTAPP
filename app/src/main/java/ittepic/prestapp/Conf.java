@@ -1,9 +1,9 @@
 package ittepic.prestapp;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
-public class Conf extends AppCompatActivity {
+public class Conf extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

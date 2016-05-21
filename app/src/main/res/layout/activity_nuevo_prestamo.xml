@@ -80,9 +80,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="T I P O   D E   A R T I C U L O"
+            android:text="T I P O  D E   A R T I C U L O"
             android:id="@+id/textView3"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:gravity="center"
             android:textColor="#ffffff" />
 
@@ -102,7 +102,6 @@
             android:layout_height="fill_parent"
             android:id="@+id/spinner"
             android:layout_weight="1"
-            android:entries="@array/arreglo"
             android:foregroundTint="#ffffff"
             android:longClickable="false"
             android:popupBackground="#c2c2c2"
@@ -150,7 +149,8 @@
             android:layout_height="50dp"
             android:id="@+id/imageButton"
             android:src="@android:drawable/ic_menu_close_clear_cancel"
-            android:background="#212121" />
+            android:background="#212121"
+            android:onClick="Limpiar" />
     </LinearLayout>
 
     <LinearLayout
